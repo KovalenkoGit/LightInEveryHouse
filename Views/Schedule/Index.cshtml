@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<LightInEveryHouse.Models.Schedule>
 @{
     ViewData["Title"] = "Графік відключення";
+    var addressFilter = ViewData["AddressFilter"] as string;
 }
 
 <h1>Графік відключення</h1>
@@ -9,7 +10,7 @@
     <form method="get" asp-action="Index">
         <div class="row pt-4">
             <label for="addressFilter">Введіть адресу:</label>
-            <input type="text" id="addressFilter" name="addressFilter" class="form-control" placeholder="Почніть вводити адресу">
+            <input type="text" id="addressFilter" name="addressFilter" class="form-control" placeholder="Почніть вводити адресу" value="@addressFilter">
         </div>
         <div class="row pt-3">
             <button type="submit" class="btn btn-primary">Показати графік</button>
@@ -17,7 +18,7 @@
     </form>
 </div>
 
-@if (Model.Any())
+@if (Model != null && Model.Any())
 {
     <table class="table table-bordered table-striped" style="width:100%">
         <thead>
@@ -39,9 +40,9 @@
         </tbody>
     </table>
 }
-else
+else if (!string.IsNullOrEmpty(addressFilter))
 {
-    <p>Немає записів.</p>
+    <p>Немає записів для цієї адреси.</p>
 }
 
 <script>
@@ -53,8 +54,8 @@ else
                     data: { term: request.term },
                     dataType: 'json',
                     success: function (data) {
-                        console.log("Received data:", data); // Перевірте отримані дані
-                        response(data); // Прямо передаємо масив рядків
+                        console.log("Received data:", data); // Перевіряємо отримані дані
+                        response(data); //Передаємо масив рядків
                     },
                     error: function (xhr, status, error) {
                         console.error("AJAX Error:", status, error); // Обробка помилок

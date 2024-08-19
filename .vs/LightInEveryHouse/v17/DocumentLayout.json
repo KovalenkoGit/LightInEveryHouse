@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "D:\\GitHub\\LightInEveryHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\views\\schedule\\filterbyaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:views\\schedule\\filterbyaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\LightInEveryHouse\\Migrations\\20240819104020_RenameTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240819104020_RenameTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|d:\\github\\lightineveryhouse\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7AC507-5419-43E0-A859-57ED525B268B}|LightInEveryHouse.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 77,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,119 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-19T17:57:57.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-19T16:40:05.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Models\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Models\\BaseEntity.cs",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Models\\BaseEntity.cs",
-              "RelativeToolTip": "Models\\BaseEntity.cs",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T16:26:53.159Z",
+              "WhenOpened": "2024-08-19T20:46:32.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Address.cs",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Models\\Address.cs",
-              "RelativeDocumentMoniker": "Models\\Address.cs",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Models\\Address.cs",
-              "RelativeToolTip": "Models\\Address.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T10:05:21.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Views\\Schedule\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Schedule\\Index.cshtml",
               "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Views\\Schedule\\Index.cshtml",
               "RelativeToolTip": "Views\\Schedule\\Index.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAUwC0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T06:28:05.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ScheduleController.cs",
               "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Controllers\\ScheduleController.cs",
               "RelativeDocumentMoniker": "Controllers\\ScheduleController.cs",
               "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Controllers\\ScheduleController.cs",
               "RelativeToolTip": "Controllers\\ScheduleController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAiwCkAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T12:30:40.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApiDbContext.cs",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Data\\ApiDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApiDbContext.cs",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Data\\ApiDbContext.cs",
-              "RelativeToolTip": "Data\\ApiDbContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T12:37:48.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FilterByAddress.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Views\\Schedule\\FilterByAddress.cshtml",
-              "RelativeDocumentMoniker": "Views\\Schedule\\FilterByAddress.cshtml",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Views\\Schedule\\FilterByAddress.cshtml",
-              "RelativeToolTip": "Views\\Schedule\\FilterByAddress.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-19T10:55:30.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20240819104020_RenameTable.cs",
-              "DocumentMoniker": "D:\\GitHub\\LightInEveryHouse\\Migrations\\20240819104020_RenameTable.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240819104020_RenameTable.cs",
-              "ToolTip": "D:\\GitHub\\LightInEveryHouse\\Migrations\\20240819104020_RenameTable.cs",
-              "RelativeToolTip": "Migrations\\20240819104020_RenameTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T10:40:20.974Z",
               "EditorCaption": ""
             }
           ]

@@ -13,19 +13,27 @@ namespace LightInEveryHouse.Controllers
             _db = db;
         }
 
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
+
+
         // Метод для відображення списку графіків
         public IActionResult Index(string addressFilter)
         {
-            IEnumerable<Schedule> objList = _db.Schedules
-                .Include(s => s.Address);
+            IEnumerable<Schedule> schedules = null;
 
             if (!string.IsNullOrEmpty(addressFilter))
             {
-                objList = objList.Where(s => s.Address != null &&
-                                              s.Address.StreetAddress.Contains(addressFilter));
+                schedules = _db.Schedules
+                    .Include(s => s.Address)
+                    .Where(s => s.Address.StreetAddress.ToLower().Contains(addressFilter.ToLower()))
+                    .ToList();
             }
 
-            return View(objList.ToList());
+            ViewData["AddressFilter"] = addressFilter;
+            return View(schedules);
         }
 
         // Метод для отримання пропозицій адрес
