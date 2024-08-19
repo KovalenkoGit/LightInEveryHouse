@@ -1,6 +1,4 @@
-﻿@using Newtonsoft.Json
-@model IEnumerable<LightInEveryHouse.Models.Schedule>
-
+﻿@model IEnumerable<LightInEveryHouse.Models.Schedule>
 @{
     ViewData["Title"] = "Графік відключення";
 }
@@ -8,45 +6,62 @@
 <h1>Графік відключення</h1>
 
 <div class="container p-3">
-    <div class="row pt-4">
-        <label for="addressFilter">Вибрати адресу:</label>
-        <input type="text" id="addressFilter" name="addressFilter" class="form-control" placeholder="Почніть вводити адресу">
-    </div>
+    <form method="get" asp-action="Index">
+        <div class="row pt-4">
+            <label for="addressFilter">Введіть адресу:</label>
+            <input type="text" id="addressFilter" name="addressFilter" class="form-control" placeholder="Почніть вводити адресу">
+        </div>
+        <div class="row pt-3">
+            <button type="submit" class="btn btn-primary">Показати графік</button>
+        </div>
+    </form>
 </div>
 
-    @if (Model.Count() > 0)
-    {
-        <table class="table table-bordered table-striped" style="width:100%">
-            <thead>
+@if (Model.Any())
+{
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>День</th>
+                <th>Початок</th>
+                <th>Кінець</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
                 <tr>
-                    <th>
-                        Часові проміжки
-                    </th>
-                    <th>
-                        00-01
-                    </th>
-                    <th>
-                        01-02
-                    </th>
+                    <td width="50%">@obj.Day</td>
+                    <td width="25%">@obj.StartTime</td>
+                    <td width="25%">@obj.FinishTime</td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var obj in Model)
-                {
-                    <tr>
-                        <td width="50%">@obj.Day</td>
-                        <td width="25%">@obj.StartTime</td>
-                        <td width="25%">@obj.FinishTime</td>
-                    </tr>
-                }
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Немає записів.</p>
+}
 
-
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <p>No driver</p>
-    }
-</div>
-
+<script>
+    $(function () {
+        $("#addressFilter").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("GetAddressSuggestions", "Schedule")',
+                    data: { term: request.term },
+                    dataType: 'json',
+                    success: function (data) {
+                        console.log("Received data:", data); // Перевірте отримані дані
+                        response(data); // Прямо передаємо масив рядків
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX Error:", status, error); // Обробка помилок
+                    }
+                });
+            },
+            minLength: 2 // Починає показувати пропозиції після введення 2 і більше символів
+        });
+    });
+</script>

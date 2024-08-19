@@ -12,9 +12,11 @@ namespace LightInEveryHouse.Data
         }
         public DbSet<Schedule> Schedules { get; set; }
         public DbSet<Address> Addresses { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Address>().ToTable("Address");
+
             modelBuilder.Entity<Address>(entity =>
             {
                 entity.HasOne(g => g.Group)

@@ -236,3 +236,4 @@ D:\GitHub\LightInEveryHouse\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.W
 D:\GitHub\LightInEveryHouse\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\GitHub\LightInEveryHouse\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\GitHub\LightInEveryHouse\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\GitHub\LightInEveryHouse\obj\Debug\net8.0\LightInEveryHouse.sourcelink.json
