@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ApiDbContext>(opt =>
                     opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultDbConnection")));
-
+#if DEBUG
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+#endif
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

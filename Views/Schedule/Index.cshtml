@@ -1,12 +1,35 @@
 ﻿@model IEnumerable<LightInEveryHouse.Models.Schedule>
+<script src="~/js/site.js"></script>
 @{
     ViewData["Title"] = "Графік відключення";
     var addressFilter = ViewData["AddressFilter"] as string;
 }
 
-<h1>Графік відключення</h1>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>Графік відключення</h1>
+    </div>
+</section>
+
 
 <div class="container p-3">
+    <!-- Форма для імпорту графіку-->
+    <form method="post" enctype="multipart/form-data" asp-action="ImportTxt">
+        <div class="row pt-1">
+            <label for="fileUpload">Імпортувати графік відключення:</label>
+            <input type="file" id="fileUpload" name="fileUpload" class="form-control" accept=".txt">
+        </div>
+        <div class="row pt-3">
+            <button type="submit" class="btn btn-success">Імпортувати</button>
+        </div>
+    </form>
+    @if (ViewData["Message"] != null)
+    {
+        <div class="alert alert-info">
+            @ViewData["Message"]
+        </div>
+    }
+    <!-- Форма для відображення графіку -->
     <form method="get" asp-action="Index">
         <div class="row pt-4">
             <label for="addressFilter">Введіть адресу:</label>
@@ -16,7 +39,7 @@
             <button type="submit" class="btn btn-primary">Показати графік</button>
         </div>
     </form>
-</div>
+    <br />
 
 @if (Model != null && Model.Any())
 {
@@ -44,7 +67,7 @@ else if (!string.IsNullOrEmpty(addressFilter))
 {
     <p>Немає записів для цієї адреси.</p>
 }
-
+</div>
 <script>
     $(function () {
         $("#addressFilter").autocomplete({

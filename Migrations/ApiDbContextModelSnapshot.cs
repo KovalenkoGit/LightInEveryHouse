@@ -47,7 +47,10 @@ namespace LightInEveryHouse.Migrations
 
                     b.HasIndex("GroupId");
 
-                    b.ToTable("Address", (string)null);
+                    b.ToTable("Address", null, t =>
+                        {
+                            t.HasComment("This table contains addresses for which blackout schedules apply.");
+                        });
                 });
 
             modelBuilder.Entity("LightInEveryHouse.Models.Group", b =>
@@ -74,7 +77,10 @@ namespace LightInEveryHouse.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Group");
+                    b.ToTable("Group", t =>
+                        {
+                            t.HasComment("This table contains groups with a description of which objects belong to this group and the possible time of turning off the light");
+                        });
                 });
 
             modelBuilder.Entity("LightInEveryHouse.Models.Schedule", b =>
@@ -101,6 +107,9 @@ namespace LightInEveryHouse.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("DayNum")
+                        .HasColumnType("integer");
+
                     b.Property<TimeSpan>("FinishTime")
                         .HasColumnType("interval");
 
@@ -111,7 +120,10 @@ namespace LightInEveryHouse.Migrations
 
                     b.HasIndex("AddressId");
 
-                    b.ToTable("Schedules");
+                    b.ToTable("Schedules", t =>
+                        {
+                            t.HasComment("This table contains the day and period of blackout.");
+                        });
                 });
 
             modelBuilder.Entity("LightInEveryHouse.Models.Address", b =>

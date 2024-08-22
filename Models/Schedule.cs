@@ -4,6 +4,7 @@
     {
         public int AddressId { get; set; }
         public string Day { get; set; }
+        public int DayNum { get; set; }
         public TimeSpan StartTime { get; set; }
         public TimeSpan FinishTime { get; set; }
         public int Archive { get; set; } = 0;

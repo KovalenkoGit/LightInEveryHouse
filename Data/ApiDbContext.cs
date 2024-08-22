@@ -28,7 +28,14 @@ namespace LightInEveryHouse.Data
                 entity.HasMany(s => s.Schedules)
                     .WithOne(a => a.Address)
                     .HasForeignKey(x => x.AddressId);
+    
             });
+            modelBuilder.Entity<Address>()
+                .HasComment("This table contains addresses for which blackout schedules apply.");
+            modelBuilder.Entity<Group>()
+                .HasComment("This table contains groups with a description of which objects belong to this group and the possible time of turning off the light");
+            modelBuilder.Entity<Schedule>()
+                .HasComment("This table contains the day and period of blackout.");
         }
 
     }

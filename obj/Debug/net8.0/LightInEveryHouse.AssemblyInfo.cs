@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LightInEveryHouse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2eaae251007913b7cc6cbece8bf4bd0a7158d8a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b760b001e2ca71747164447a42ecdb26756f2cdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("LightInEveryHouse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LightInEveryHouse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
